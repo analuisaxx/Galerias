@@ -1,0 +1,102 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 95vh;
+    width: 100%;
+    }
+.parent> div{
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+}
+ .parent>div:hover{
+    transform: scale(1.2);
+ }
+
+.div1{
+    background-image: url(imagens/foto12.png);
+    grid-area: 1 / 1 / 2 / 2;
+
+}
+.div2{
+    background-image: url(imagens/foto2.png);
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.div3{
+    background-image: url(imagens/foto3.png);
+     grid-area: 1 / 3 / 2 / 4; 
+}
+.div4{
+    background-image: url(imagens/foto4.png);
+    grid-area: 1 / 4 / 3 / 5; 
+
+}
+.div5{
+    background-image: url(imagens/foto5.png);
+    grid-area: 1 / 5 / 2 / 6; 
+}
+.div6{
+    background-image: url(imagens/foto6.png);
+    grid-area: 1 / 6 / 2 / 8; 
+}
+.div7{
+    background-image: url(imagens/foto7.png);
+    grid-area: 1 / 8 / 3 / 9; 
+}
+.div8{
+    background-image: url(imagens/foto9.png);
+    grid-area: 2 / 3 / 4 / 4; 
+}
+.div9{
+    background-image: url(imagens/foto8.png);
+    grid-area: 2 / 1 / 3 / 3; 
+                                                    
+}
+.div10{
+    background-image: url(imagens/foto10.png);
+    grid-area: 2 / 5 / 4 / 7;
+}
+.div11{
+    background-image: url(imagens/foto11.png);
+    grid-area: 2 / 7 / 3 / 8; 
+    }
+.div12{
+    background-image: url(imagens/foto1.png); 
+    grid-area: 3 / 1 / 5 / 3;        
+}
+.div13{
+    background-image: url(imagens/foto13.png);    
+    grid-area: 3 / 4 / 4 / 5;     
+}
+.div14{
+    background-image: url(imagens/foto14.png);
+    grid-area: 3 / 7 / 6 / 9; 
+}
+.div15{
+    background-image: url(imagens/foto15.png);
+    grid-area: 4 / 3 / 6 / 4; 
+}
+.div16{
+    background-image: url(imagens/foto16.png);
+    grid-area: 4 / 4 / 6 / 6; 
+}
+.div17{
+   background-image: url(imagens/foto17.png);
+   grid-area: 4 / 6 / 5 / 7; 
+}
+.div18{
+    background-image: url(imagens/foto18.png);
+    grid-area: 5 / 1 / 6 / 2; 
+}
+.div19{
+    background-image: url(imagens/foto19.png);
+    grid-area: 5 / 2 / 6 / 3;                                                  
+}
+.div20{
+    background-image: url(imagens/foto20.png);
+    grid-area: 5 / 6 / 6 / 7; 
+}
+                                                               

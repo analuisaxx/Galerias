@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background-color: #d3d3d3;
+    overflow: hidden;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/bec57247aa3aa2c5ddc4fa3dbc00ca08.jpg);
+}
+.parent>div {
+    border: white solid;
+    border-width: 12px 12px 50px 12px;
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    transition: all 0.5s;
+}
+p {
+    transform: translateY(140px);
+    font-family: 'Gochi Hand', cursive;
+    line-height: 20px;
+}
+
+.div1:hover{
+    transform: rotate(-30deg);
+    transform: scale(1.1);
+}
+.div1 {
+    background-image: url(img/miranha.jpg);
+    transform: rotate(15deg);
+    grid-area: 2 / 2 / 4 / 3;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.div2:hover{
+    transform: rotate(30deg);
+    transform: scale(1.1);
+}
+.div2 {
+    background-image: url(img/we-lie.jpg);
+    transform: rotate(1deg);
+    grid-area: 2 / 4 / 4 / 5;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.div3:hover{
+    transform: rotate(30deg);
+    transform: scale(1.1);
+}
+.div3 {
+    background-image: url(img/fitf.jpg);
+    transform: rotate(-20deg);
+    grid-area: 4 / 3 / 6 / 4;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.div4:hover{
+    transform: rotate(30deg);
+    transform: scale(1.1);
+}
+.div4 {
+    background-image: url(img/musicas.jpg);
+    transform: rotate(-15deg);
+    grid-area: 2 / 6 / 4 / 7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.div5:hover{
+    transform: rotate(-30deg);
+    transform: scale(1.1);
+}
+.div5 {
+    background-image: url(img/jurdan.jpg);
+    transform: rotate(15deg);
+    grid-area: 4 / 5 / 6 / 6;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}

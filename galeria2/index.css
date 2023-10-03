@@ -1,0 +1,129 @@
+:root{
+    --galeryoffset: 60%;
+}
+*{margin: 0px;}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #C0EEF2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.galery{
+    width: 90%;
+    height: 90%;
+    background-color: #C0EEF2;
+    overflow: hidden;}
+.fotos:hover{animation-play-state: paused;}
+.fotos>div{
+    background-position: center;
+    background-size: cover;
+    transition: all 0.5s;
+        
+}
+.fotos>div:hover {
+    transform: scale(1.1);
+    filter: grayscale(100%);
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 1 / 4 / 3 / 5; }
+.div5 { grid-area: 1 / 5 / 2 / 6; }
+.div6 { grid-area: 1 / 6 / 2 / 8; }
+.div7 { grid-area: 1 / 8 / 3 / 9; }
+.div8 { grid-area: 2 / 3 / 4 / 4; }
+.div9 { grid-area: 2 / 1 / 3 / 3; }
+.div10 { grid-area: 2 / 5 / 4 / 7; }
+.div11 { grid-area: 2 / 7 / 3 / 8; }
+.div12 { grid-area: 3 / 1 / 5 / 3; }
+.div13 { grid-area: 3 / 4 / 4 / 5; }
+.div14 { grid-area: 3 / 7 / 6 / 9; }
+.div15 { grid-area: 4 / 3 / 6 / 4; }
+.div16 { grid-area: 4 / 4 / 6 / 6; }
+.div17 { grid-area: 4 / 6 / 5 / 7; }
+.div18 { grid-area: 5 / 1 / 6 / 2; }
+.div19 { grid-area: 5 / 2 / 6 / 3; }
+.div20 { grid-area: 5 / 6 / 6 / 7; }
+.div1{
+    background-image: url(imagens/foto12.png);
+
+}
+.div2{
+    background-image: url(imagens/foto2.png);
+}
+.div3{
+    background-image: url(imagens/foto3.png);
+}
+.div4{
+    background-image: url(imagens/foto4.png);
+}
+.div5{
+    background-image: url(imagens/foto5.png);
+}
+.div6{
+    background-image: url(imagens/foto6.png);
+}
+.div7{
+
+    background-image: url(imagens/foto7.png);
+}
+.div8{
+    background-image: url(imagens/foto9.png);
+}
+.div9{
+    background-image: url(imagens/foto8.png);
+                                                    
+}
+.div10{
+    background-image: url(imagens/foto10.png);
+}
+.div11{
+
+    background-image: url(imagens/foto11.png);
+    }
+.div12{
+    background-image: url(imagens/foto1.png);        
+}
+.div13{
+    background-image: url(imagens/foto13.png);        
+}
+.div14{
+    background-image: url(imagens/foto14.png);
+}
+.div15{
+    background-image: url(imagens/foto15.png);
+}
+.div16{
+    background-image: url(imagens/foto16.png);
+}
+.div17{
+   background-image: url(imagens/foto17.png);
+}
+.div18{
+    background-image: url(imagens/foto18.png);
+}
+.div19{
+    background-image: url(imagens/foto19.png);                                                 
+}
+    .div20{
+        background-image: url(imagens/foto20.png);
+    }
+
+.fotos{
+    height: 100%;
+    width: calc(100+var(--galeryoffset));
+    background-position: center;
+    animation: slides 5s infinite alternate linear;
+    display: grid;
+    grid-template-columns: repeat(8, 25%);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+}
+@keyframes slides{
+    from{ transform: translateX(0);}
+    to{transform: translateX(-1200px);}
+}
